@@ -1,0 +1,32 @@
+[versions]
+kotlin-version = "2.2.10"
+compose-plugin = "1.6.11"
+serialization-version = "2.1.20"
+json-version = "1.9.0"
+exposed-version = "0.59.0"
+datetime-version = "0.6.1"
+sqlite-version = "3.50.2.0"
+slf4j-version = "2.0.7"
+versions-version = "0.52.0"
+
+[libraries]
+datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime-version" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed-version" }
+exposed-crypt = { module = "org.jetbrains.exposed:exposed-crypt", version.ref = "exposed-version" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed-version" }
+exposed-java-time = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed-version" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed-version" }
+exposed-jodatime = { module = "org.jetbrains.exposed:exposed-jodatime", version.ref = "exposed-version" }
+exposed-json = { module = "org.jetbrains.exposed:exposed-json", version.ref = "exposed-version" }
+exposed-kotlin-datetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "exposed-version" }
+exposed-money = { module = "org.jetbrains.exposed:exposed-money", version.ref = "exposed-version" }
+json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "json-version" }
+slf4j = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j-version" }
+sqlite = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite-version" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-version" }
+jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-version" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization-version" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versions-version" }

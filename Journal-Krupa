@@ -1,0 +1,56 @@
+10/01/2025:
+- created gradle project
+
+10/03/2025:
+- created hex code colour palettes
+
+10/07/2025:
+- finished colour palette matching algorithm
+- wrote many tests to test all the functions involved
+
+10/08/2025:
+- removed "internal" class for test file (matching algorithm)
+
+10/09/2025:
+- changed structure and moved palette matching functions and variables to domain classes
+
+10/29/2025:
+- began implementing face capture page
+
+10/30/2025:
+- completed basic implementation of face capture page 
+
+11/12/2025:
+- completed face capture page integration into palette matching algorithm
+- created starter code for OpenAI API integration
+
+11/13/2025:
+- fixed code to work with database 
+
+11/14/2025:
+- continued fixing code to work with database
+
+11/21/2025:
+- fixed all the pulling of data to access colour analysis results/palettes/extracted colours
+- continued with AI chatbot implementation
+- added products to the database
+
+11/24/2025:
+- fixed all colour analysis functionality and the ui for it
+- fixed all the database functions related to the colour analysis 
+- created the recommended products population algorithm
+- added products to the database and edited fields
+
+11/26/2025:
+- finished the entire AI chatbot using gemini
+- did the navigation to theh face capture page when you click the "update analysis" button 
+
+11/27/2025:
+- added tests to for all features i coded related the colour analysis algorithm
+
+11/30/2025:
+- started working on the notifications ui
+
+12/01/2025:
+- finished the notifications ui
+- filmed the video

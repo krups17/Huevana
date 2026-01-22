@@ -1,0 +1,120 @@
+Friday, Oct 03
+ - Met with Allison to build the models drawing
+ - We decided on the following structure: Model -> Users -> Personas -> Products
+
+Monday, Oct 06
+ - Create the base model
+ - Add and implement functions for the base model 
+ - Create the User model 
+ - Add and implement functions for the user model 
+ - create the personas data class, link it back to users data class 
+ - create products data class, link it back to main model 
+ - add + implement functions for this too
+ - meet with Allison - I didn't have gradle set up properly, so we did bug fixing through her laptop
+ - discussed how to test with Allison. 
+
+Thursday, Oct 09
+ - final review before presentation 
+ - changed all wording to Persona (to differentiate user profile (their account) from personas)
+
+Over reading week
+ - spent a lot of time getting Compose to work, but I was having some issues 
+ - I tried adding it as a new project vs new module 
+ - I also tried copying simply all settings file notation from Jeff's examples, but that was also throwing errors 
+
+Wednesday, Oct 22
+ - Allison and I talked to Jeff after class about Compose issues 
+ - He helped fix it 
+ - I code reviewed this : )
+
+Tuesday, Oct 28
+ - Fix some java version so that Compose works
+
+Wednesday, Oct 29
+ - Add the base classes for Kotlin - View, ViewModel, connecting this to Model 
+ - Create home page framework and top nav bar
+ - Add Accounts page - where you can view your info and edit it 
+ - Add Personas Page - where you can view all the personas you have as Cards
+
+Thursday, Oct 30
+ - none of my UI pages needed testing, so i added a test for the top toolbar
+ - made figma designs
+ - met with the group
+
+Wednesday, Nov 05
+ - create account page UI
+
+Thursday, Nov 06
+ - fix a broken main test - a sign in test was broken 
+
+Tuesday, Nov 11
+ - UI for home page sidebar
+
+Wednesday, Nov 12
+ - UI for home page - so adding product boxes
+
+Thursday, Nov 13
+ - UI for chatbot page - it's responsive UI, so it adds more message blocks if user adds more messages
+
+Tuesday, Nov 18
+ - Connect Persona page to the database
+
+Thursday, Nov 20
+ - connect DB with accounts page
+ - had to make a lot of base model changes for this - for ex, storing the id of the current user once they sign in, to use in other pages like accounts page
+ - I had to create an init function to pull the user from DB based on this current user ID value - had to research on how to create this init function 
+ - then finally fill account details from user 
+ - the task sounds easy but because of such low level changes, it took a while. But I think I wrote broad enough code that all other tickets can use this 
+
+Friday, Nov 21
+ - We met with the group today, we went to a cafe to work together 
+ - Create persona UI
+    - initially I make a page where you can fill details of the new persona - then I realized we only fill name 
+    - so scrapped this idea, instead, we work directly through a box - modal like behavior 
+    - also refactored code here so that the number of boxes change based on how many personas we have
+ - Add persona DB 
+    - First time working with Supabase, so had some issues with sending in right ID. But now I simply send a payload with id missing 
+    - ability to create a persona in Supabase 
+    - then code to fetch all the personas we have, display them 
+    - note for this: I did a lot of refactoring to avoid N+1 requests 
+ - Default Persona 
+    - creating a new user should create a new default persona 
+    - Also had to go in the database and add a default persona for our existing accounts 
+    - store this default new persona in model
+    - home page should display name of persona - added another field in model to store which persona we are using 
+    - clicking on a persona takes then to homepage for the persona 
+
+Sunday, Nov 23
+ - Edit persona - with a lot of stages (all caps)
+    - clicking on persona (BASE stage) takes to MENU stage - with options to select, edit, make default, delete
+    - SELECT will actually select that persona and take you back to home page
+    - EDIT will give you a textbox with their name: you can edit the name and click save. you stay on the persona page (design choice - user might want to bulk edit)
+    - MAKE DEFAULT makes the persona their default persona, selects that persona, and takes to home page (design choice - since we can only have one default, user WOULDN't want to bulk edit here)
+    - Delete will be another ticket!
+    - So all the UI, restructuring and functionality was done here 
+ - Delete persona 
+    - added an ERROR stage to show error 
+    - if we try deleting the default persona, that's an error
+    - deleting deletes the persona from persona table and ANY occurance of it from the user table
+
+Monday + Tuesday, Nov 24 + 25
+ - Sharing Persona - the ticket that drove me crazy
+ - problem 1: had to change DB
+    - I decided to add a new table called shared persona - this will contain the id, the persona id and the owner id
+    - and then i also added a column to the user table that contains the id of the shared persona entry - so the user receiving the persona will have an entry there
+    - and then of course, mocking this, adding functions related to this
+ - problem 2: getting the receiver through their email [when working on feature for sharing side]
+    - this happened when I was clicking "Share Persona", entering an email, creating a Shared Persona entry, and looking for the receiver user, so I can add the Shared Persona ID there 
+    - I would keep getting the error that no user with that email exists - EVEN THOUGH IT did
+    - I don't know why a clean select with eq filter wouldn't work.... 
+    - but I just fetched all the users and then filtered with a for loop - I understand this is slower, but I couldn't fix the other issue : ( the debugging already took a while
+ - problem 3: too many edge cases, testing took so long, debugging hard cuz I'm using so many different tables [when working on feature for receiver side]
+    - i think using so many ids - receiver and sharer user id, persona id and shared persona entry id, made it really confusing. 
+    - the UI part was easy but I was debugging stupid stuff like persona deleting when shared persona should, etc.
+ - but Allison was really nice and helped me testing: allison caught a bug - I was deleting the persona if you click on the error message. fixed this!
+
+Thursday, Nov 27
+ - Added tests for the persona changes 
+
+Friday, Nov 28
+ - Changed icons - had to import another library for a good AI ChatBot Icon

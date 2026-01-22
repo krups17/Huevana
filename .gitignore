@@ -1,0 +1,15 @@
+build/
+out/
+*.class
+*.tmp
+.DS_Store
+.idea
+
+# Build outputs
+**/Release/
+**/ReleaseInstaller/
+build/
+*.exe
+*.jar
+*.dll
+*.dat

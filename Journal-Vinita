@@ -1,0 +1,47 @@
+OCT 6, 2025
+
+Implemented a few base functions and their corresponding unit tests
+
+OCT 9, 2025
+
+Final review before presentation
+
+Reading week
+
+Met with group to discuss how our app should look like
+
+OCT 29, 2025
+
+Added in the screens that I'm responsible for on the shared Figma (sign in/create account screens, recommend products screen, wishlist screen)
+Fixed a Java dependency issue
+
+OCT 30, 2025
+
+Coded the UI for the sign in screen and added unit tests
+
+NOV 10, 2025
+
+Did the sign in function incorporating the database (supabase)
+Create user function and page
+
+NOV 11, 2025
+
+Fixed some broken tests
+Created Mock Storage and tests
+Created error catching for the new functions I created
+
+NOV 14, 2025
+
+Practiced demo presentation for sprint 3
+
+NOV 24, 2025
+
+Wishlist GUI, all associated functions
+Added hearts on products in recommendation page
+Changed email to username in sign in page
+Added tests
+
+NOV 30, 2025
+
+Implemented profile pictures, allowed personas to choose/edit them
+Fixed a few merge errors

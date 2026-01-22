@@ -1,0 +1,50 @@
+10/7/2025
+Worked with Shraddha on the basic structure and drafted diagram to bring to class next day to clatify the structure
+
+10/8/2025
+Added unit tests for basic functions implemented by Shraddha for User, Profile and Product classes
+
+Reading week
+played around with the UI stuff
+working on homepage, setting up columns and rows
+
+10/30/2025
+did most of Homepage and tests without grid of products
+
+11/6/2025
+setup supabase
+watched videos and looked through the documentation to get a good base understanding
+
+11/7/2025
+added basic unit tables
+need to add User and Personas tables
+need to add Palette base class
+
+11/9/2025
+added database functions for products
+added palettes and hexcodes to Palettes and Hex Codes tables in supabase
+
+11/10/2025
+did the ERL diagram
+
+11/11/2025
+added some columns to the tables and fixed the fields in the code 
+tried to debug issue with Krupa with duplicate keys
+
+11/12/2025
+implemented some more IStorage functions to be safe
+
+11/21/2025
+worked on LazyGrid for the products on the Homepage
+
+11/24/2025
+added the code to show the actual products from the current Persona
+added the Scrollbar
+
+11/26/2025
+tried to do a search bar but the typing is so slow and probably because the entire page gui updates after each character typed 
+and there is a lot of stuff on the homepage to load
+added all product photos to the database so they render faster
+
+11/27/2025
+added the filter button and no palette error message

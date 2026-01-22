@@ -1,0 +1,306 @@
+Meeting Notes
+
+9/3/2025
+
+Class meeting
+Met and formed team
+
+9/4/2025
+
+Tasks Completed
+Registered team
+Discussed topic
+Setup GitLab and repository
+Submitted Setup to Learn
+
+Working Idea
+Beauty app
+Android
+Sharing beauty products with friends
+See what beauty products are trending
+Computer vision to see what foundation hex code is for you
+
+Team Lead: Allison Kempton
+Tech Lead: Shraddha Mishra
+
+Meeting Length: 44 mins
+
+9/10/2025
+
+Class meeting
+Discussed next meeting time
+
+9/12/2025
+
+Class meeting
+Discussed possible app ideas
+
+9/14/2025
+
+Tasks Completed
+Brainstormed product features, user stories, personas, and scenarios
+Put user stories in GitLab
+Created presentation
+Delegated tasks to finish for Proposal separately
+
+Meeting Length: 1.75 hrs
+
+9/17/2025
+Class meeting
+Discussed next meeting time
+
+9/24/2025
+
+Class meeting
+Discussed time to meet to practice presentation
+
+9/26/2025
+
+Tasks Completed:
+Practiced Proposal Presentation
+
+Meeting Length: 45 mins
+
+9/29/2025
+
+Sprint 1 Planning
+
+Ideas
+Can make separate personal profiles (connect a different palette/skin tone matching to each profile)
+Can have a friend’s list where you can see their profiles (like an explore page)
+Should have permissions
+Palette matching alg - Krupa
+Sharing carts alg - Vinita
+The empty architecture - Allison
+Filling in the fields for classes - Shraddha
+Plan to on meeting again Thurs Oct 9 at 9pm to practice before demo
+Want to have some stuff done before the weekend so if we need to have another meeting we can on Monday
+
+Meeting Length: 56 mins
+
+10/1/2025
+
+Class meeting
+Discussed some potential issues with architecture
+
+
+10/9/2025
+
+To Do:
+Add subtasks to add issues in GitLab
+Talk about some comments left in the code
+Make sure everyone is filling out their Journals
+
+What we discussed: 
+https://www.figma.com/design/zojP6Q4tKBlI9VYq0KjT19/Material-3-Design-Kit--Community-?node-id=11-1833&t=Xfs9PVvLK9utLeTU-1 - we will use components from here
+added gitlab sub issues
+closed relevant issues
+discussed sprint 2
+
+Notes for Sprint 1 Demo
+Palette Matching algorithm shows that we made progress on a feature
+Made the data classes and put the functions in the model
+Implemented multiple persons per user as per proposal feedback
+Show gantt chart
+
+Meeting Length: 40 mins
+
+10/10/2025
+
+Tasks Completed:
+Practiced for sprint 1 demo
+
+10/13/2025
+
+To-do
+Homepage
+Just a logo and a login button
+Once you sign in
+Top right is wishlist and profile icon - about your account
+Chatbot that comes up in the bottom right 
+Its recommended products 
+Side bar
+Profiles page 
+Camera page 
+Wishlist page: 
+Show all the products 
+Share button
+Camera page:
+First, modal with two options: upload a picture or take a picture 
+We want an outline (like they do for face id) - for taking a picture
+They can pick their colors themselves - for forehead, cheek, lip..? and chin
+We need a flow for this
+Upload picture option as well
+Personas page: 
+Show all the personas that are clickable and then show details for that 
+Accounts page 
+Different than profiles page because this is their ACCOUNT
+So past products and current products are also here 
+Add a friend button to share your profile 
+
+Roles for Sprint 2
+Photo Capture Page - Krupa
+Personas page and Accounts page - Shraddha
+Homepage/Sign in page - Vinita
+Wishlist - Vinita
+Makeup Recommender - Allison
+After Sign in page - Allison
+shows their palette
+recommended products
+or if no palette start your colour analysis
+
+Coding Standards
+Make separate branches for features and pull requests
+24 hours feedback for pr’s
+pr reviewers should be equal
+
+10/22/2025
+
+In class meeting
+discussed sprint requirements
+
+10/25/2025
+
+Quick vid call to fix issues
+set up the overall structure
+
+10/30/2025
+
+add some unit tests
+finalize figma pages and draw the flow 
+Fix merge conflicts 
+Fix sign in page to look more aesthetically pleasing 
+separate views into each screen
+update meeting notes in repo
+update journals
+update issues
+Meeting Length: 1.0 hr
+
+10/31/2025
+Practiced for Demo
+Finalized some code structure stuff before 6pm
+11/5/2025
+Tasks
+Allison
+Setup Supabase
+Make the DB Classes
+Make UML Diagram using Mermaid
+Have UML Diagram ready for Friday !!!
+Krupa
+Integrate palette matching algo into face capture page (1st)
+Fix anything with palette matching algo that needs to be fixed
+Chatbot stuff (2nd)
+Fix facecapture view/viewmodel
+midterm saturday
+Shraddha
+ChatBot - AI 
+Fix GUI stuff - DONE
+Make Chatbot page - DONE
+View/ViewModel fixing structure (1st)
+Vinita
+Mock Interface Classes
+Mock Interface Tests
+Sign in DB function (find user and make sure password matches) 
+To add to sign up function
+adding user’s info to the Users database table
+figuring out how to catch errors for sign in with the wrong email
+change username to email
+
+11/7/2025
+Quick call to check in.
+
+11/13/2025
+Left to do for 
+Allison
+update ERD diagram
+update meeting notes in repo
+add 5 hex codes - done
+Vinita
+fixing tests
+Krupa
+fixing colour analysis
+
+
+11/14/2025
+Practiced demo presentation
+
+11/18/2025
+Tasks Left to Do
+Personas - Shraddha
+Personas on persona screen match what the user has in their personas field in the database - DONE
+CRUD functions implemented with database - DONE
+implement share personas with other users
+Wishlist - Vinita
+CRUD function implemented with database (for past and current product fields as well)
+Wishlist page GUI and button working with functions (add to wishlist)
+Change email to username in the sign in page
+password reset
+Colour Analysis - Krupa
+find recommended products and colours from colour analysis result and put in the Personas recommendedProducts and recommendedColours fields in the database
+adding all the possible products we could recommend to the database
+connect update analysis button on homepage to go to the face capture page
+Chatbot - Shraddha/Krupa
+Finish AI connection
+AI working with GUI
+think about saving the chats to the chatbot screen when clicking to another screen and back
+Recommended Products - Allison
+displaying products from database (setting up scroll bar)
+implementing the filters
+search bar works
+Profile page - Shraddha
+showing the profile information they entered (from database) - DONE
+Features of low priority not on here: Clothing recommender, Would this look good on me? feature
+Everyone - ADD TESTS for your new functions and GUI
+Next Meetings: 
+Friday Nov 21 11am-2pm
+Tuesday Nov 25 5pm
+Meeting Length: 0.5hr
+https://student.cs.uwaterloo.ca/~cs346/1259/course/project/requirements/
+
+11/21/2025
+
+Met at a cafe and worked on Personas, Wishlist, Palette Algorithm and Products display together as talked about in last meeting
+
+11/25/2025
+
+Left to Do
+
+Allison
+search bar - HIGH
+filter
+palette displayed matches palette for persona - HIGH
+message if no products, update colour analysis
+issues
+TESTS
+journal
+update meeting notes
+
+Krupa
+Update analysis button goes to Face capture page and updates analysis -
+Finish integrating chatbot 
+Fix rec products population algorithm
+Pressing enter instead of the send button
+Write new tests and fix old tests
+Close gitlab issues
+TESTS
+Lume - record video
+
+Vinita
+Wishlist page GUI
+Wishlist heart button with products
+profile page save changes
+TESTS
+issues
+
+Shraddha
+TESTS
+add more products 
+Change chatbot icon
+
+11/27/2025
+
+Meeting tomorrow at 10:15am to practice
+Tests left to do
+Updates to filter
+
+
